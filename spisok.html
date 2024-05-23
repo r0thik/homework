@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<thead>
+List Example
+</thead>
+<head>
+<title></title>
+<style type = "text/css">
+ol(counter-reset: item)
+li(display: block)
+li:after{content: counters(item, ".")"."); counter-increment: item;}
+</style>
+</head>
+<body>
+<ol>
+  <li>List Item 
+<ol type="A">
+<li>Nested item </li>
+<li>Nested item </li>
+</ol>
+</li>
+  <li>List Item 
+<ol type="i">
+<li>Nested item </li>
+<li>Nested item 
+<ul>
+      <li>Nested item </li>
+      <li>Nested item 
+<ul>
+      <li>Nested item </li>
+      <li>Nested item </li>
+      
+    </ul></li>
+      <li>Nested item </li>
+    </ul>
+</li>
+<li>Nested item </li>
+</ol>
+</li>
+
+  <li>List Item </li>
+<ul>
+      <li>Item </li>
+      <li>Item </li>
+      <li>Item </li>
+    </ul>
+</ol>
+</body>
+</html>
